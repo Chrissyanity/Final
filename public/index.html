@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myMod'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adventures in Reading</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body ng-controller='dbCtrl'>
+  <body ng-controller='dbCtrl'>
+      <div class="wrapper" ng-controller="refreshCtrl">
+          <header ng-controller="registerCtrl">
+              <header-directive></header-directive>
+          </header>
+          <div>
+              <ng-view></ng-view>
+          </div>
+          <div class="pushFooter"></div>
+      </div>
+      <footer-directive></footer-directive>
+
+
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-animate.js'></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-animate.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='scripts/module.js'></script>
+    <script src='scripts/dbCtrl.js'></script>
+    <script src='scripts/libInput.js'></script>
+    <script src='scripts/libOutput.js'></script>
+    <script src='scripts/dbFactory.js'></script>
+    <script src='scripts/readingFactory.js'></script>
+    <script src='scripts/trophyController.js'></script>
+    <script src='scripts/studentFactory.js'></script>
+    <script src='scripts/refreshCtrl.js'></script>
+    <script src='scripts/registerCtrl.js'></script>
+
+
+</body>
+
+</html>
