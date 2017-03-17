@@ -1,6 +1,6 @@
 var app = angular.module('myMod');
 
-app.controller('headerCtrl', function($scope, $rootScope, studentFactory, $location){
+app.controller('headerCtrl', function($scope, $rootScope, $window, studentFactory, $location){
   var date = new Date();
   $scope.year = date.getFullYear();
 
@@ -26,7 +26,14 @@ app.controller('headerCtrl', function($scope, $rootScope, studentFactory, $locat
             $scope.registerButton = !$scope.registerButton;
         } else {
         };
+        if (!$scope.logoutButton) {
+            $scope.logoutButton = !$scope.logoutButton;
+        } else {
+        };
         $location.path('/formOutput');
       }
   };
+  $scope.logout = function(){
+    $window.location.reload();
+  }
 });
