@@ -20,22 +20,30 @@ app.controller('dbCtrl', function($scope, $animate, dbFactory, readingFactory, s
         }).indexOf($scope.student.studentname);
         $scope.selectedStudent = $scope.students[index];
 
-        studentFactory.sendStudent($scope.selectedStudent);
-        //displays the message shown on login
-        if (!$scope.loginConfirmMessage) {
-            $scope.loginConfirmMessage = !$scope.loginConfirmMessage;
-        } else {
+        if ($scope.selectedStudent === undefined){
+          alert("Check your spelling and try again");
+        }else{
 
-        };
+          studentFactory.sendStudent($scope.selectedStudent);
+          //displays the message shown on login
+          if (!$scope.loginConfirmMessage) {
+              $scope.loginConfirmMessage = !$scope.loginConfirmMessage;
+          } else {
 
-        if (!$scope.loginButton) {
-            $scope.loginButton = !$scope.loginButton;
-            $scope.registerButton = !$scope.registerButton;
+          };
 
-        } else {
+          if (!$scope.loginButton) {
+              $scope.loginButton = !$scope.loginButton;
+              $scope.registerButton = !$scope.registerButton;
 
-        };
-        $location.path('/formOutput');
+          } else {
+
+          };
+          $location.path('/formOutput');
+
+        }
+
+
 
     }
 
