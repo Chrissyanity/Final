@@ -20,7 +20,6 @@ app.directive("footerDirective", function() {
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider
     .when('/intro', {
-        controller: 'dbCtrl',
         templateUrl: '../views/intro.html'
     })
       .when('/trophyroom', {

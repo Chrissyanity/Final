@@ -2,7 +2,7 @@ var app = angular.module('myMod');
 
 
 
-app.controller('dbCtrl', function($scope, $animate, dbFactory, readingFactory, studentFactory, $location) {
+app.controller('dbCtrl', function($scope, $rootScope, $animate, dbFactory, readingFactory, studentFactory, $location) {
   $('#loginModal').modal('show');
   var date = new Date();
   $scope.year = date.getFullYear();

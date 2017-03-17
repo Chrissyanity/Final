@@ -7,14 +7,14 @@ var bodyParser = require('body-parser');
 var client = new pg.Client(connectionString);
 
 var config = {
-
     user: 'uucfqjmvphfcff',
     database: 'de5hv9qg2ieort',
     password: password,
     host: 'ec2-50-17-236-15.compute-1.amazonaws.com',
     port: 5432,
     max: 100,
-    idleTimeoutMillis: 30000
+    idleTimeoutMillis: 30000,
+    ssl: true
 };
 
 var pool = new pg.Pool(config);
@@ -26,7 +26,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/get-student', function(req, res) {
     var results = [];
-    pg.connect(connectionString, function(err, client, done) {
+    pool.connect(function(err, client, done) {
 
         var query = client.query('select * from studentsinfo');
 
@@ -46,45 +46,52 @@ app.post('/add-student', function(req, res, next) {
         studentname: req.body.studentname
     };
 
-    pg.connect(connectionString, function(err, client, done) {
-        client.query('INSERT INTO studentsinfo(studentname, booksread) values($1, $2)', [data.studentname, 0]);
+    pool.connect(function(err, client, done) {
+        var insertQuery = client.query('INSERT INTO studentsinfo(studentname, booksread) values($1, $2)', [data.studentname, 0]);
 
-        var query = client.query('SELECT * FROM studentsinfo');
+        insertQuery.on('end', function() {
+            var query = client.query('SELECT * FROM studentsinfo');
 
-        query.on('row', function(row) {
-            results.push(row);
-        });
-        query.on('end', function() {
-            client.end();
-            return res.json(results);
-            console.log(results);
+            query.on('row', function(row) {
+                results.push(row);
+            });
+            query.on('end', function() {
+                client.end();
+                return res.json(results);
+                console.log(results);
+            });
         });
     });
 });
 
- app.put('/update-books-read/:id', function(req, res, next) {
-     var results = [];
-     var id = req.params.id;
-     var data = {
-       booksread: req.body.booksread
-     };
+app.put('/update-books-read/:id', function(req, res, next) {
+    var results = [];
+    var id = req.params.id;
+    var data = {
+        booksread: req.body.booksread
+    };
 
 
-     pg.connect(connectionString, function(err, client, done) {
-       client.query('UPDATE studentsinfo SET booksread=($1) WHERE id=($2)', [data.booksread, id]);
-     var query = client.query('SELECT * FROM studentsinfo');
+    pool.connect(function(err, client, done) {
+        var updateQuery = client.query('UPDATE studentsinfo SET booksread=($1) WHERE id=($2)', [data.booksread, id]);
 
-     query.on('row', function(row){
-           results.push(row);
+        updateQuery.on('end', function() {
+            var query = client.query('SELECT * FROM studentsinfo');
 
-         });
-         query.on('end', function(){
-           client.end();
-           return res.json(results);
-            
-         });
-       });
-     });
+            query.on('row', function(row) {
+                results.push(row);
+
+            });
+            query.on('end', function() {
+                client.end();
+                return res.json(results);
+
+            });
+
+        })
+
+    });
+});
 
 
 
