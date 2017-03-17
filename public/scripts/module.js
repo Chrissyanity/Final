@@ -23,7 +23,7 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: '../views/intro.html'
     })
       .when('/trophyroom', {
-        controller: 'dbCtrl',
+        controller: 'trophyController',
         templateUrl: '../views/trophyroom.html'
     })
 
