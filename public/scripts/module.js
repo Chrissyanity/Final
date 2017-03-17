@@ -23,10 +23,6 @@ app.config(function($routeProvider, $locationProvider) {
         controller: 'dbCtrl',
         templateUrl: '../views/intro.html'
     })
-    .when('/form', {
-        controller: 'libInput',
-        templateUrl: '../views/form.html'
-    })
       .when('/trophyroom', {
         controller: 'dbCtrl',
         templateUrl: '../views/trophyroom.html'
