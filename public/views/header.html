@@ -74,9 +74,12 @@
 				<h4 class="modal-title" id="registerModalLabel">Please Register:</h4>
 			</div>
 			<div class="modal-body">
-				<label for="userName">Name:</label>
-				<input type="text" name="userName" ng-model="newStudent.studentname" />
-				<input type="button" name="addUser" id="addUser" ng-click="register()" value="Click me" data-dismiss="modal"/>
+				<form>
+					<label for="userName">Name:</label>
+					<input type="text" name="userName" ng-model="newStudent.studentname" />
+					<input type="submit" name="addUser" id="addUser" ng-click="register()" value="Click me" data-dismiss="modal"/>
+				</form>
+
 
 
 			</div>
