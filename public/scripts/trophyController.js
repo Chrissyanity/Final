@@ -145,7 +145,6 @@ app.controller('trophyController', function ($scope, studentFactory) {
 }
 
 
-
 //     $scope.backTrophies = [{
 //        source: '../img/Trophies/1.png',
 //        alternate: 'one small step',

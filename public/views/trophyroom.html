@@ -10,12 +10,12 @@
                             <img ng-src='{{trophy.source}}' alt="trophy.alternate" class="trophy" ng-class='{locked: trophy.locked}'>
                         </div>
                         <div class="back box">
-                            
+
                         </div>
-                    
+
                     </div>
                 </div>
-                <div class="progress" ng-if="trophy.progress">
+                <div class="progress" ng-if="trophy.progress && trophy.barValue < 100" >
                    <div class="progress-bar" role="progressbar" aria-valuenow="{{trophy.barValue}}" aria-valuemin="0" aria-valuemax="100" style="width: {{trophy.barValue}}%;">
                    {{trophy.barValue}}%
              </div>
