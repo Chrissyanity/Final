@@ -24,6 +24,7 @@ app.controller('headerCtrl', function($scope, $rootScope, $window, studentFactor
         if (!$scope.loginButton) {
             $scope.loginButton = !$scope.loginButton;
             $scope.registerButton = !$scope.registerButton;
+            $scope.navLinks = !$scope.navLinks;
         } else {
         };
         if (!$scope.logoutButton) {
