@@ -1,21 +1,22 @@
-
 <div class="container">
-<div class="row">
-       <div class="col-md-3" ng-repeat='trophy in trophies' >
-           <div class="flip-container" ontouchstart="this.classList.toggle('hover');" >
-               <div ng-class='{flipper: !trophy.locked}'>
-                   <div class="front">
-                       <img ng-src='{{trophy.sauce}}' alt="trophy.alternate" class="trophy" ng-class='{locked: trophy.locked}'>
-                   </div>
-                   <div class="back box">
-                       <p class="text">
-                     {{trophy.trophyName}}
-                       </p>
-                   </div>
-               </div>
-           </div>
-       </div>
+    <div class="row">
+        <div ng-repeat='trophy in trophies'>
+            <div class="clearfix" ng-if="$index % 4 == 0"></div>
+            <div class="col-md-3">
+               <h6> {{trophy.trophyName}}</h6>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div ng-class='{flipper: !trophy.locked}'>
+                        <div class="front">
+                           
+                            <img ng-src='{{trophy.sauce}}' alt="trophy.alternate" class="trophy" ng-class='{locked: trophy.locked}'>
+                            
+                        </div>
+                        <div class="back box">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-       
-
