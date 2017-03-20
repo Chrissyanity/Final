@@ -1,7 +1,5 @@
 
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-});
+
 
 var createTrophy = function (src, title) {
 	var omg = new Image();

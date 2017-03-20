@@ -4,6 +4,10 @@ app.controller('headerCtrl', function($scope, $rootScope, $window, studentFactor
   var date = new Date();
   $scope.year = date.getFullYear();
 
+  $('#loginModal').on('shown.bs.modal', function () {
+    $('#userName').focus()
+  });
+
   $scope.student = {};
   $scope.getUser = function() {
       console.log($scope.student);
