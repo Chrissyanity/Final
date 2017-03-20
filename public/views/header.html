@@ -9,7 +9,7 @@
       </button>
 		</div>
 		<div class="collapse navbar-collapse" id="collapsed">
-			<ul class="nav navbar-nav navbar-left">
+			<ul class="nav navbar-nav navbar-left" ng-show="navLinks">
 				<li><a href="#/intro">Intro</a></li>
 				<li><a href="#/trophyroom">Trophies</a></li>
 				<li><a href="#/formOutput">Track Progress</a></li>
@@ -25,16 +25,18 @@
 						<button type="button" class="headButton" data-toggle="modal" data-target="#registerModal">Register</button>
 					</div>
 				</li>
-				<div ng-show="loginConfirmMessage">
-					<p>
-						Hello {{selectedStudent.studentname}}!
-					</p>
-				</div>
-				<div ng-show="registerConfirmMessage">
-					<p>
-						Hello {{newStudent.studentname}}!
-					</p>
-				</div>
+				<li>
+					<div ng-show="loginConfirmMessage">
+						<p>
+							Hello {{selectedStudent.studentname}}!
+						</p>
+					</div>
+				</li>
+				<li>
+					<div ng-show="logoutButton">
+						<button type="button" class="headButton" ng-click="logout()">Logout</button>
+					</div>
+				</li>
 			</ul>
 		</div>
 	</div>

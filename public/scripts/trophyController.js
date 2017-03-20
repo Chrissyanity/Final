@@ -27,5 +27,3 @@ app.controller('trophyController', function ($scope, studentFactory) {
         locked: true
     }];
     
-
-});
