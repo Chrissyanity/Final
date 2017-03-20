@@ -6,6 +6,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
     //array to hold trophy image objects
     $scope.trophies = [{
         source: '../img/trophyImages/oneSmallStepTrophy.png',
+        backsource: '../img/trophy_backs/1.png',
         alternate: 'one small step',
         trophyName: 'one small step',
         locked: true,
@@ -14,6 +15,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
 
     }, {
         source: '../img/trophyImages/trophy.png',
+        backsource: '../img/trophy_backs/trophy.png',
         alternate: 'read more than 50 pages',
         trophyName: 'read more than 50 pages',
         locked: true,
@@ -21,6 +23,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: 0
     }, {
         source: '../img/trophyImages/tripleThreatTrophy.png',
+        backsource: '../img/trophy_backs/3.png',
         alternate: 'triple threat!',
         trophyName: 'triple threat!',
         locked: true,
@@ -29,6 +32,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
     },
     {
         source: '../img/trophyImages/fabFiveTrophy.png',
+        backsource: '../img/trophy_backs/5.png',
         alternate: 'fab five!',
         trophyName: 'fab five!',
         locked: true,
@@ -36,6 +40,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: Math.floor(($scope.individual.booksread/5)*100)
     }, {
         source: '../img/trophyImages/doubleDigitalTrophy.png',
+        backsource: '../img/trophy_backs/10.png',
         alternate: 'double digital!',
         trophyName: 'double digital!',
         locked: true,
@@ -43,6 +48,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: Math.floor(($scope.individual.booksread/10)*100)
     }, {
         source: '../img/trophyImages/trophy.png',
+        backsource: '../img/trophy_backs/trophy.png',
         alternate: 'read for longer than 30 minutes',
         trophyName: 'read for longer than 30 minutes',
         locked: true,
@@ -51,6 +57,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
 
     }, {
         source: '../img/trophyImages/walkingLibraryTrophy.png',
+        backsource: '../img/trophy_backs/20.png',
         alternate: 'walking library!',
         trophyName: 'walking library!',
         locked: true,
@@ -58,6 +65,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: Math.floor(($scope.individual.booksread/20)*100)
     }, {
         source: '../img/trophyImages/25Trophy.png',
+        backsource: '../img/trophy_backs/25.png',
         alternate: 'crucial quarter!',
         trophyName: 'crucial quarter!',
         locked: true,
@@ -65,6 +73,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: Math.floor(($scope.individual.booksread/25)*100)
     }, {
         source: '../img/trophyImages/trophy.png',
+        backsource: '../img/trophy_backs/trophy.png',
         alternate: 'over 100 pages!',
         trophyName: 'over 100 pages!',
         locked: true,
@@ -72,6 +81,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: 0
     }, {
         source: '../img/trophyImages/trophy.png',
+        backsource: '../img/trophy_backs/trophy.png',
         alternate: 'over 30 minutes!',
         trophyName: 'over 30 minutes!',
         locked: true,
@@ -79,6 +89,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: 0
     }, {
         source: '../img/trophyImages/trophy.png',
+        backsource: '../img/trophy_backs/trophy.png',
         alternate: 'more than 5 trophies!',
         trophyName: 'more than 5 trophies!',
         locked: true,
@@ -86,6 +97,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: 0
     }, {
         source: '../img/trophyImages/trophy.png',
+        backsource: '../img/trophy_backs/trophy.png',
         alternate: 'over 60 minutes!',
         trophyName: 'over 60 minutes!',
         locked: true,
@@ -93,6 +105,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: 0
     }, {
         source: '../img/trophyImages/trophy.png',
+        backsource: '../img/trophy_backs/50.png',
         alternate: 'nifty fifty!',
         trophyName: 'nifty fifty!',
         locked: true,
@@ -100,6 +113,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: Math.floor(($scope.individual.booksread/50)*100)
     },  {
         source: '../img/trophyImages/trophy.png',
+        backsource: '../img/trophy_backs/trophy.png',
         alternate: 'over 100 pages!',
         trophyName: 'over 100 pages!',
         locked: true,
@@ -107,6 +121,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: 0
     }, {
         source: '../img/trophyImages/trophy.png',
+        backsource: '../img/trophy_backs/trophy.png',
         alternate: 'took a book on a trip!',
         trophyName: 'took a book on a trip!',
         locked: true,
@@ -114,6 +129,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         barValue: 0
     },  {
         source: '../img/trophyImages/100Trophy.png',
+        backsource: '../img/trophy_backs/100.png',
         alternate: 'read 100 books!',
         trophyName: 'read 100 books!',
         locked: true,
