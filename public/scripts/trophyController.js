@@ -4,6 +4,8 @@ app.controller('trophyController', function ($scope, studentFactory) {
     $scope.individual = studentFactory.returnStudent();
     console.log($scope.individual);
 
+    
+    //array to hold trophy image objects
     $scope.trophies = [{
         sauce: '../img/trophyImages/oneSmallStepTrophy.png',
         alternate: 'one small step',
@@ -26,4 +28,5 @@ app.controller('trophyController', function ($scope, studentFactory) {
         trophyName: 'double digital!',
         locked: true
     }];
+});
     
