@@ -5,7 +5,10 @@ app.controller('headerCtrl', function($scope, $rootScope, $window, studentFactor
   $scope.year = date.getFullYear();
 
   $('#loginModal').on('shown.bs.modal', function () {
-    $('#userName').focus()
+    $('#loginUserName').focus()
+  });
+  $('#registerModal').on('shown.bs.modal', function () {
+    $('#registerUserName').focus()
   });
 
   $scope.student = {};

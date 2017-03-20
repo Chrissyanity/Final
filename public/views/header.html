@@ -54,7 +54,7 @@
 			<div class="modal-body">
 				<form>
 						<label for="userName">Name:</label>
-						<input type="text" name="userName" id="userName" ng-model="student.studentname" />
+						<input type="text" name="userName" id="loginUserName" ng-model="student.studentname" />
 						<input type="submit" name="getUser" id="getUser" ng-click="getUser()" value="Click me" data-dismiss="modal"/>
 				</form>
 
@@ -74,11 +74,11 @@
 				<h4 class="modal-title" id="registerModalLabel">Please Register:</h4>
 			</div>
 			<div class="modal-body">
-				<label for="userName">Name:</label>
-				<input type="text" name="userName" ng-model="newStudent.studentname" />
-				<input type="button" name="addUser" id="addUser" ng-click="register()" value="Click me" data-dismiss="modal"/>
-
-
+				<form>
+					<label for="userName">Name:</label>
+					<input type="text" name="userName" id="registerUserName" ng-model="newStudent.studentname" />
+					<input type="submit" name="addUser" id="addUser" ng-click="register()" value="Click me" data-dismiss="modal"/>
+				</form>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
