@@ -171,3 +171,12 @@ h1, h4, li {
     font-size: 20px;
     text-align: center;
 }
+.progress {
+  top: 50px;
+  margin: auto;
+  margin-top: 60px;
+  width: 50%;
+}
+.flip-container, .front {
+  width: 100%;
+}

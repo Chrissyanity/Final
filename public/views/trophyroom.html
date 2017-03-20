@@ -16,6 +16,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="progress" ng-if="trophy.progress">
+                   <div class="progress-bar" role="progressbar" aria-valuenow="{{trophy.barValue}}" aria-valuemin="0" aria-valuemax="100" style="width: {{trophy.barValue}}%;">
+                   {{trophy.barValue}}%
+             </div>
+           </div>
             </div>
         </div>
     </div>
