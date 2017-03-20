@@ -26,7 +26,8 @@ app.controller('trophyController', function ($scope, studentFactory) {
         locked: true,
         progress: true,
         barValue: Math.floor(($scope.individual.booksread/3)*100)
-    }, {
+    },
+    {
         source: '../img/trophyImages/fabFiveTrophy.png',
         alternate: 'fab five!',
         trophyName: 'fab five!',
@@ -97,7 +98,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         locked: true,
         progress: true,
         barValue: Math.floor(($scope.individual.booksread/50)*100)
-    }, {
+    },  {
         source: '../img/trophyImages/trophy.png',
         alternate: 'over 100 pages!',
         trophyName: 'over 100 pages!',
@@ -111,7 +112,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
         locked: true,
         progress: false,
         barValue: 0
-    }, {
+    },  {
         source: '../img/trophyImages/100Trophy.png',
         alternate: 'read 100 books!',
         trophyName: 'read 100 books!',
@@ -119,6 +120,37 @@ app.controller('trophyController', function ($scope, studentFactory) {
         progress: true,
         barValue: Math.floor(($scope.individual.booksread/100)*100)
     }
-
 ];
+
+    if ($scope.individual.booksread >= 1) {
+    $scope.trophies[0].locked = false;
+}
+    if ($scope.individual.booksread >= 3) {
+    $scope.trophies[2].locked = false;
+}
+     if ($scope.individual.booksread >= 5) {
+    $scope.trophies[3].locked = false;
+}
+   if ($scope.individual.booksread >= 10) {
+    $scope.trophies[4].locked = false;
+}
+     if ($scope.individual.booksread >= 25) {
+    $scope.trophies[7].locked = false;
+}
+    if ($scope.individual.booksread >= 50) {
+    $scope.trophies[12].locked = false;
+}
+    if ($scope.individual.booksread >= 100) {
+    $scope.trophies[15].locked = false;
+}
+
+
+
+//     $scope.backTrophies = [{
+//        source: '../img/Trophies/1.png',
+//        alternate: 'one small step',
+//        trophyName: 'one small step'
+//
+//    },
+//];
 });
