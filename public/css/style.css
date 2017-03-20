@@ -61,7 +61,7 @@ footer p {
   height: 175px;
    width: 200px;
     border-radius: 50%;
-    margin-top: 45px;
+    margin-top: 0px;
     background-color: #0071bc;
     box-shadow: 5px 5px 15px #606060;
 
@@ -79,7 +79,7 @@ p.text {
     height: 175px;
     width: 200px;
     border-radius: 50%;
-    margin-top: 45px;
+    margin-top: 0px;
     /*background-color: blue;*/
     /*text-align: center;*/
     box-shadow: 5px 5px 15px #606060;
