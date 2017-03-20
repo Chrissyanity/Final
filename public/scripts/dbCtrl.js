@@ -6,4 +6,12 @@ app.controller('dbCtrl', function($scope, $rootScope, dbFactory) {
         $rootScope.students = dbFactory.update();
         console.log("$rootScope.students=" + $rootScope.students);
     });
+    
+    
+    
 });
+
+
+
+
+

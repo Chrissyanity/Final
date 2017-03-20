@@ -1,30 +1,31 @@
 var app = angular.module('myMod');
 
-app.controller('trophyController', function($scope, studentFactory){
-  $scope.individual = studentFactory.returnStudent();
+app.controller('trophyController', function ($scope, studentFactory) {
+    $scope.individual = studentFactory.returnStudent();
     console.log($scope.individual);
 
+    $scope.trophies = [{
+        sauce: '../img/trophyImages/oneSmallStepTrophy.png',
+        alternate: 'one small step',
+        trophyName: 'one small step',
+        locked: false
+        
+    }, {
+        sauce: '../img/trophyImages/tripleThreatTrophy.png',
+        alternate: 'triple threat!',
+        trophyName: 'triple threat!',
+        locked: false
+    }, {
+        sauce: '../img/trophyImages/fabFiveTrophy.png',
+        alternate: 'fab five!',
+        trophyName: 'fab five!',
+        locked: true
+    }, {
+        sauce: '../img/trophyImages/doubleDigitalTrophy.png',
+        alternate: 'double digital!',
+        trophyName: 'double digital!',
+        locked: true
+    }];
     
 
-    
-   if ($scope.individual.booksread >= 1){
-     $('#firstBookTrophy').removeClass('locked').parent().parent().addClass('flipper');
-   }else{
-     }
-    
-     if ($scope.individual.booksread >= 5){
-     $('#fifthBookTrophy').removeClass('locked').parent().parent().addClass('flipper');
-   }else{
-     }
-    
-      if ($scope.individual.booksread >= 10){
-     $('#tenthBookTrophy').removeClass('locked').parent().parent().addClass('flipper');
-   }else{
-     }
-    
-   if ($scope.individual.booksread >= 100){  $('#hundredthBookTrophy').removeClass('locked').parent().parent().addClass('flipper');
-   }else{
-     }
-    
-    
 });

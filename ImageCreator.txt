@@ -1,0 +1,13 @@
+function trophyCreator(src, title) {
+	this.src = src,
+	this.alt = title,
+	this.title = title,
+};
+var firstTrophy = new trophyCreator(“img/trophyImages/oneSmallStepTrophy.png”, “one small step”);
+
+console.log(firstTrophy);
+
+$scope.imageArray = [{sauce: “source.png”, alternate: “alt”}, {sauce: “source.png”, alternate: “alt”}, {sauce: “source.png”, alternate: “alt”}];
+
+<div ng-controller= “dbController”>
+	<img ng-repeat=“image in imageArray” (ng-attr-)src={{ image.sauce }} alt = {{ image.alternate }}>
