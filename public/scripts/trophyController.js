@@ -150,6 +150,9 @@ app.controller('trophyController', function ($scope, studentFactory) {
    if ($scope.individual.booksread >= 10) {
     $scope.trophies[4].locked = false;
 }
+  if ($scope.individual.booksread >= 20) {
+ $scope.trophies[6].locked = false;
+}
      if ($scope.individual.booksread >= 25) {
     $scope.trophies[7].locked = false;
 }

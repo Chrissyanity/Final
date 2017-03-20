@@ -3,7 +3,7 @@
         <div ng-repeat='trophy in trophies'>
             <div class="clearfix" ng-if="$index % 4 == 0"></div>
             <div class="col-md-3">
-               <h6> {{trophy.trophyName}}</h6>
+              
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                     <div ng-class='{flipper: !trophy.locked}'>
                         <div class="front">
