@@ -1,13 +1,13 @@
 var app = angular.module('myMod');
 
-app.controller('libInput', function($scope, dbFactory, readingFactory, studentFactory, $location){
+app.controller('libInput', function($scope, $route, dbFactory, readingFactory, studentFactory, $location){
 
   var updatedStudent = studentFactory.returnStudent();
 
 
   //taking information from the form and when submit button is clicked it increments the book by one
   $scope.updateBooks = function(student) {
-     
+
       console.log(student);
     readingFactory.exportTo(student);
     updatedStudent.booksread++;
@@ -42,19 +42,19 @@ app.controller('libInput', function($scope, dbFactory, readingFactory, studentFa
           updatedStudent.overtwohundred = true;
           console.log("two hundred ran");
       }
-      
+
       //clears the bookTitleField of modal on 'submit'
      var clearField = document.getElementById("bookTitleField");
       clearField.value = '';
       console.log("Book title field cleared!");
-      
-      
+
+
 //myValue determines whether or not madLib output displays. true = yes false=no
       $scope.myValue = false;
       $scope.showAlert = function () {
         $scope.myValue = true;
       };
-      
+
       $scope.hideAlert = function () {
         $scope.myValue = false;
       };
@@ -63,7 +63,7 @@ app.controller('libInput', function($scope, dbFactory, readingFactory, studentFa
       $scope.showAlert();
       $location.path('/formOutput');
     });
-
+    $route.reload();
   };
 
 });
