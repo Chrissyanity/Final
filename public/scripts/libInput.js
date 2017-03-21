@@ -42,6 +42,8 @@ app.controller('libInput', function($scope, dbFactory, readingFactory, studentFa
           updatedStudent.overtwohundred = true;
           console.log("two hundred ran");
       }
+      
+      //clears the bookTitleField of modal on 'submit'
      var clearField = document.getElementById("bookTitleField");
       clearField.value = '';
       console.log("Book title field cleared!");
