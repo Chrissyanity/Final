@@ -10,7 +10,7 @@ app.controller('libInput', function($scope, dbFactory, readingFactory, studentFa
       console.log(student);
     readingFactory.exportTo(student);
     updatedStudent.booksread++;
-      
+
     if (student.time == "30 minutes" || "One Hour" || "More than an hour") {
         updatedStudent.thirtymin = true;
     }
@@ -18,11 +18,11 @@ app.controller('libInput', function($scope, dbFactory, readingFactory, studentFa
         updatedStudent.thirtymin = true;
         updatedStudent.sixtymin = true;
     }
-      
+
       if (student.place !== "At Home" || "At School" ) {
           updatedStudent.trip = true;
       }
-      
+
       if (student.pagesread == "Somewhere between 50 - 100 pages") {
           updatedStudent.overfifty = true;
       }
@@ -35,10 +35,14 @@ app.controller('libInput', function($scope, dbFactory, readingFactory, studentFa
           updatedStudent.overonehundred = true;
           updatedStudent.overtwohundred = true;
       }
-      
 
+      $scope.myValue = false;
+      $scope.showAlert = function () {
+        $scope.myValue = true;
+      };
 
     dbFactory.updateBooksRead(updatedStudent).then(function() {
+      $scope.showAlert();
       $location.path('/formOutput');
     });
 
