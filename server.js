@@ -1,23 +1,10 @@
 var express = require('express');
 var pg = require('pg');
+var pool = require('./pg-connection-pool');
 var app = express();
-var password = require('./password');
-var connectionString = 'postgres://uucfqjmvphfcff:' + password + '@ec2-50-17-236-15.compute-1.amazonaws.com:5432/de5hv9qg2ieort?ssl=true';
 var bodyParser = require('body-parser');
-var client = new pg.Client(connectionString);
 
-var config = {
-    user: 'uucfqjmvphfcff',
-    database: 'de5hv9qg2ieort',
-    password: password,
-    host: 'ec2-50-17-236-15.compute-1.amazonaws.com',
-    port: 5432,
-    max: 100,
-    idleTimeoutMillis: 30000,
-    ssl: true
-};
 
-var pool = new pg.Pool(config);
 
 app.use(bodyParser.json({
     extended: true
@@ -98,8 +85,8 @@ app.put('/update-books-read/:id', function (req, res, next) {
 
                     });
             });
-
-        var server = app.listen(3000, function () {
+        var port = process.env.PORT || 3000;
+        var server = app.listen(port, function () {
             var port = server.address().port;
             console.log('PostgreSQL server running at http://localhost:%s', port);
         });

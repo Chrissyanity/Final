@@ -30,7 +30,10 @@ html, body {
     margin-bottom: -90px;
 }
 
-.footer, .push {
+.footer {
+    height: 90px;
+}
+.push {
     height: 90px;
 }
 
