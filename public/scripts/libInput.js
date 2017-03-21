@@ -46,6 +46,10 @@ app.controller('libInput', function($scope, dbFactory, readingFactory, studentFa
       $scope.showAlert = function () {
         $scope.myValue = true;
       };
+      
+      $scope.hideAlert = function () {
+        $scope.myValue = false;
+      };
 
     dbFactory.updateBooksRead(updatedStudent).then(function() {
       $scope.showAlert();
