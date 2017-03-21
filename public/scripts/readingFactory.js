@@ -11,4 +11,5 @@ app.factory('readingFactory', function() {
       return bookInfo;
     }
   }
+  console.log(bookInfo);
 });

@@ -53,7 +53,8 @@ function updateBooksRead(updatedStudent){
     url: '/update-books-read/'  + updatedStudent.id,
     data: updatedStudent
   }).then(function success(response){
-
+console.log("The student has been updated");
+      console.log(updatedStudent);
     student = response.data;
   });
   return promise;
