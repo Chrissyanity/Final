@@ -157,42 +157,41 @@ app.controller('trophyController', function ($scope, studentFactory) {
      if ($scope.individual.booksread >= 3) {
         $scope.trophies[1].locked = false;
     }
-    if ($scope.individual.overfifty = true) {
+    if ($scope.individual.overfifty === true) {
         $scope.trophies[2].locked = false;
     }
     if ($scope.individual.booksread >= 5) {
         $scope.trophies[3].locked = false;
     }
-     if ($scope.individual.thirtymin = true) {
+     if ($scope.individual.thirtymin === true) {
         $scope.trophies[4].locked = false;
     }
     if ($scope.individual.booksread >= 10) {
         $scope.trophies[5].locked = false;
     }
-    if ($scope.individual.overonehundred = true) {
+    if ($scope.individual.overonehundred === true) {
         $scope.trophies[6].locked = false;
     }
 
     if ($scope.individual.booksread >= 20) {
         $scope.trophies[7].locked = false;
     }
-    if ($scope.individual.sixtymin = true) {
+    if ($scope.individual.sixtymin === true) {
         $scope.trophies[8].locked = false;
     }
-
     
     if ($scope.individual.booksread >= 25) {
         $scope.trophies[10].locked = false;
     }
     
-     if ($scope.individual.trip = true) {
+     if ($scope.individual.trip === true) {
         $scope.trophies[11].locked = false;
     }
      if ($scope.individual.booksread >= 50) {
         $scope.trophies[12].locked = false;
     }
    
-    if ($scope.individual.overtwohundred = true) {
+    if ($scope.individual.overtwohundred === true) {
         $scope.trophies[13].locked = false;
     }
 
