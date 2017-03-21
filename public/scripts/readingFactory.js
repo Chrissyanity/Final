@@ -8,8 +8,10 @@ app.factory('readingFactory', function() {
       bookInfo = data;
       },
     importIn: function() {
+        
+        console.log(bookInfo);
       return bookInfo;
     }
   }
-  console.log(bookInfo);
+  
 });
