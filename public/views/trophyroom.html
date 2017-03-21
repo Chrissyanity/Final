@@ -3,23 +3,24 @@
         <div ng-repeat='trophy in trophies'>
             <div class="clearfix" ng-if="$index % 4 == 0"></div>
             <div class="col-md-3">
-              
                 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
                     <div ng-class='{flipper: !trophy.locked}'>
-                        <div class="front">
+                        <div class="front text-center">
+                            <div class="progress" ng-if="trophy.progress && trophy.barValue < 100">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="{{trophy.barValue}}" aria-valuemin="0" aria-valuemax="100" style="width: {{trophy.barValue}}%;">
+                                    {{trophy.barValue}}%
+                                </div>
+                            </div>
                             <img ng-src='{{trophy.source}}' alt="trophy.alternate" class="trophy" ng-class='{locked: trophy.locked}'>
                         </div>
-                        <div class="back">
-                            <img ng-src='{{trophy.backsource}}' alt="trophy.alternate" class="box" >
+                        <div class="back text-center">
+                            <img ng-src='{{trophy.backsource}}' alt="trophy.alternate" class="box">
                         </div>
-
                     </div>
                 </div>
-                <div class="progress" ng-if="trophy.progress && trophy.barValue < 100" >
-                   <div class="progress-bar" role="progressbar" aria-valuenow="{{trophy.barValue}}" aria-valuemin="0" aria-valuemax="100" style="width: {{trophy.barValue}}%;">
-                   {{trophy.barValue}}%
-             </div>
-           </div>
+                <p class="description"><em>
+                {{ trophy.trophyName }}
+              </em></p>
             </div>
         </div>
     </div>

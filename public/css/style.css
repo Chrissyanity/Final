@@ -30,8 +30,12 @@ html, body {
     margin-bottom: -90px;
 }
 
-.footer, .push {
+.footer {
     height: 90px;
+}
+
+.push{
+  height: 90px;
 }
 
 .headButton {
@@ -41,6 +45,14 @@ html, body {
     border: none;
     margin: 5px;
     padding: 5px;
+}
+
+
+.description{
+    margin: 20px;
+    text-align: center;
+    margin-right: 70px
+
 }
 
 .headButton.hover {
@@ -94,7 +106,7 @@ p.text {
     background-color: grey;
 }
 
-.unlocked {}
+
 
 .flip-container {
     perspective: 1000px;
@@ -175,6 +187,9 @@ h1, h4, li {
 .progress {
   top: 50px;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 25px;
   width: 50%;
+  position: absolute;
+  z-index: 100;
+  margin-left: 50px;
 }
