@@ -27,11 +27,9 @@
 					</div>
 				</li>
 				<li>
-					<div ng-show="loginConfirmMessage">
-						<p>
-							Hello {{selectedStudent.studentname}}!
+						<p ng-show="loginConfirmMessage" class="greeting">
+							<strong>Hello {{selectedStudent.studentname}}!</strong>
 						</p>
-					</div>
 				</li>
 				<li>
 					<div ng-show="logoutButton">
