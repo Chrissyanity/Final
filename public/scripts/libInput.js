@@ -1,13 +1,13 @@
 var app = angular.module('myMod');
 
-app.controller('libInput', function($scope, $route, dbFactory, readingFactory, studentFactory, $location){
+app.controller('libInput', function($scope, $route, dbFactory, studentFactory, $location){
 
  var updatedStudent = studentFactory.returnStudent();
 
  //taking information from the form and when submit button is clicked it increments the book by one
  $scope.updateBooks = function(student) {
 
-   readingFactory.exportTo(student);
+   studentFactory.exportTo(student);
    updatedStudent.booksread++;
 
    if (student.time === "30 minutes" || "One Hour" || "More than an hour") {
