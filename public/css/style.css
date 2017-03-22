@@ -2,22 +2,6 @@ a {
     font-family: 'Cabin Sketch', cursive;
 }
 
-.displayedStudentInfo {
-    border: 1px solid black;
-}
-
-.displayedStudentInfoName {
-    border: 1px solid black;
-}
-
-.studentColumn {
-    border: 1px solid black;
-}
-
-.studentColumn {
-    border: 1px solid black;
-}
-
 html, body {
     height: 100%;
     margin: 0;
@@ -36,6 +20,12 @@ html, body {
     height: 90px;
 }
 
+.description {
+    margin: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
+
 .headButton {
     color: #fff;
     background-color: #6496c8;
@@ -45,18 +35,30 @@ html, body {
     padding: 5px;
 }
 
-.description {
-    margin: 20px;
-    text-align: center;
-    margin-right: 10px;
-}
-
 .headButton.hover {
     background-color: #346392;
     text-shadow: -1px 1px #27496d;
 }
 
 .headButton.active {
+    background-color: #27496d;
+    text-shadow: -1px 1px #193047;
+}
+.formButton {
+    color: #fff;
+    background-color: #6496c8;
+    text-shadow: -1px 1px #417cb8;
+    border: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+.formButton.hover {
+    background-color: #346392;
+    text-shadow: -1px 1px #27496d;
+}
+
+.formButton.active {
     background-color: #27496d;
     text-shadow: -1px 1px #193047;
 }
@@ -169,4 +171,7 @@ h1, h4, li {
 
 .progress-bar {
     min-width: 20px;
+}
+.table {
+  box-shadow: 2px 3px 4px gray;
 }
