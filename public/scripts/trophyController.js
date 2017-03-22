@@ -27,7 +27,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
             source: '../img/book.png',
             backsource: '../img/allTheTrophies/50pagesback.png',
             alternate: 'read more than 50 pages',
-            trophyName: 'Read more than 50 pages to unlock this reward!',
+            trophyName: 'Read 50 pages, and you will unlock this sweet reward! (Need at least 3 books read)',
             locked: true,
             progress: false,
             barValue: 0
@@ -45,7 +45,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
             source: '../img/allTheTrophies/time.png',
             backsource: '../img/allTheTrophies/30minback.png',
             alternate: 'read for longer than 30 minutes',
-            trophyName: 'Unlock this sweet reward once you read for more than 30 minutes!',
+            trophyName: 'After you have 2 or more books under your belt, unlock this sweet reward for reading longer than 30 minutes!',
             locked: true,
             progress: false,
             barValue: 0
@@ -63,7 +63,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
             source: '../img/allTheTrophies/book.png',
             backsource: '../img/allTheTrophies/100pagesback.png',
             alternate: 'over 100 pages!',
-            trophyName: 'Finishing a chapter book is a major feat! This trophy unlocks after reading 100 pages or more.',
+            trophyName: 'Finishing a chapter book is a major feat! This trophy unlocks after reading 100 pages or more. (You need to read 7 books or more to be eligible for this trophy)',
             locked: true,
             progress: false,
             barValue: 0
@@ -83,7 +83,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
             source: '../img/allTheTrophies/time.png',
             backsource: '../img/allTheTrophies/60minback.png',
             alternate: 'over 60 minutes!',
-            trophyName: 'Devoted reading will unlock this trophy, read for more than an hour!',
+            trophyName: 'Devoted reading will unlock this trophy, read for more than an hour! (You need to read 7 books or more to be eligible for this trophy)',
             locked: true,
             progress: false,
             barValue: 0
@@ -91,7 +91,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
             source: '../img/allTheTrophies/5trophiesfront.png',
             backsource: '../img/allTheTrophies/5trophies.png',
             alternate: 'more than 5 trophies!',
-            trophyName: 'more than 5 trophies!',
+            trophyName: 'more than 5 trophies (trophy)!',
             locked: true,
             progress: false,
             barValue: 0
@@ -101,7 +101,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
             source: '../img/allTheTrophies/25.png',
             backsource: '../img/trophy_backs/25.png',
             alternate: 'crucial quarter!',
-            trophyName: 'Unlock this reward after unlocking your 25th book!',
+            trophyName: 'Unlock this reward after reading your 25th book!',
             locked: true,
             progress: true,
             barValue: Math.floor(($scope.individual.booksread / 25) * 100)
@@ -110,7 +110,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
             source: '../img/allTheTrophies/trip.png',
             backsource: '../img/allTheTrophies/tripback.png',
             alternate: 'took a book on a trip!',
-            trophyName: 'You’re going places! This trophy unlocks once you take a good book along on a trip with you.',
+            trophyName: 'You’re going places! This trophy unlocks once you take a good book along on a trip with you. (Must have read at least 5 books)',
             locked: true,
             progress: false,
             barValue: 0
@@ -128,7 +128,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
             source: '../img/allTheTrophies/book.png',
             backsource: '../img/allTheTrophies/200pagesback.png',
             alternate: 'over 200 pages!',
-            trophyName: 'Wow you love to read! This trophy unlocks after reading 200 pages or more.',
+            trophyName: 'Wow you love to read! Once you hit double digits and read a book with 200 pages or more, you unlock this great award.',
             locked: true,
             progress: false,
             barValue: 0
@@ -179,18 +179,18 @@ app.controller('trophyController', function ($scope, studentFactory) {
     if ($scope.individual.sixtymin === true && $scope.individual.booksread >= 7) {
         $scope.trophies[8].locked = false;
     }
-    
+
     if ($scope.individual.booksread >= 25) {
         $scope.trophies[10].locked = false;
     }
-    
+
      if ($scope.individual.trip === true && $scope.individual.booksread >= 5) {
         $scope.trophies[11].locked = false;
     }
      if ($scope.individual.booksread >= 50) {
         $scope.trophies[12].locked = false;
     }
-   
+
     if ($scope.individual.overtwohundred === true && $scope.individual.booksread >= 10) {
         $scope.trophies[13].locked = false;
     }
@@ -198,7 +198,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
 if ($scope.individual.booksread >= 75) {
         $scope.trophies[14].locked = false;
     }
-   
+
     if ($scope.individual.booksread >= 100) {
         $scope.trophies[15].locked = false;
     }
