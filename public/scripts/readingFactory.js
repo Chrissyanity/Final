@@ -1,6 +1,6 @@
 var app = angular.module('myMod');
-
-//storing information from the form inside of an object
+//factory for libInput and libOutput controllers
+//storing information (data) from new book form inside of an object called bookInfo, to be accessed by dbFactory
 app.factory('readingFactory', function() {
   var bookInfo = {};
   return {
@@ -8,10 +8,10 @@ app.factory('readingFactory', function() {
       bookInfo = data;
       },
     importIn: function() {
-        
+
         console.log(bookInfo);
       return bookInfo;
     }
   }
-  
+
 });

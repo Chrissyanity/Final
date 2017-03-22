@@ -1,5 +1,5 @@
 var app = angular.module('myMod');
-//taking in an empty object from the dbctrl
+//getting currently logged in student from headerCtrl, storing that student in an object called studentInfo, in order to pass that object into output controller (libOutput)
 app.factory('studentFactory', function(){
 
   var studentInfo = {};
@@ -12,7 +12,7 @@ app.factory('studentFactory', function(){
 
   //passing data between two controllers
   function sendStudent(selectedStudent){
-  
+
     studentInfo = selectedStudent;
   }
 

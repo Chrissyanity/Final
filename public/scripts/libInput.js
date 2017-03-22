@@ -4,7 +4,6 @@ app.controller('libInput', function($scope, $route, dbFactory, readingFactory, s
 
  var updatedStudent = studentFactory.returnStudent();
 
-
  //taking information from the form and when submit button is clicked it increments the book by one
  $scope.updateBooks = function(student) {
 
@@ -63,7 +62,7 @@ app.controller('libInput', function($scope, $route, dbFactory, readingFactory, s
      $scope.showAlert();
      $location.path('/formOutput');
    });
-   
+
  };
 
 });

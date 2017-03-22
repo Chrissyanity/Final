@@ -1,6 +1,8 @@
 var app = angular.module('myMod', ['ngRoute', 'ngAnimate']);
 
 
+
+//directives for header and footer, templateUrl indicates which partial to display
 app.directive("headerDirective", function() {
     return {
         restrict: "EAMC",
@@ -16,7 +18,7 @@ app.directive("footerDirective", function() {
         templateUrl: "views/footer.html"
     }
 });
-
+//app.config runs routing for index page, sets  ng-view based on page
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider
     .when('/intro', {
@@ -31,9 +33,9 @@ app.config(function($routeProvider, $locationProvider) {
       controller: 'libOutput',
       templateUrl: '../views/formOutput.html'
     })
-
+//redirects to intro
     .otherwise({redirectTo: '/intro'});
-
+//makes links work with hash codes in the server. required for routing. 
     $locationProvider.hashPrefix('');
 
 });

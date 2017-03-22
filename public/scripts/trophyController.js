@@ -1,5 +1,5 @@
 var app = angular.module('myMod');
-
+//takes information in from studentFactory and stores it as "individual"
 app.controller('trophyController', function ($scope, studentFactory) {
     $scope.individual = studentFactory.returnStudent();
     //array to hold trophy image objects
@@ -150,7 +150,9 @@ app.controller('trophyController', function ($scope, studentFactory) {
             barValue: Math.floor(($scope.individual.booksread / 100) * 100)
         }
     ];
+//conditional logic to update "locked" property on trophy objects in trophies array, from false to true, based on values of properties of the current $scope.individual object
 
+//unlocks trophies
     if ($scope.individual.booksread >= 1) {
         $scope.trophies[0].locked = false;
     }
@@ -202,7 +204,7 @@ if ($scope.individual.booksread >= 75) {
     if ($scope.individual.booksread >= 100) {
         $scope.trophies[15].locked = false;
     }
-
+//function cycles through trophies array, if trophy is unlocked, tally increments by 1
 function tallyTrophies() {
     var tally = 0;
     for (var i = 0; i < $scope.trophies.length; i++) {
@@ -210,6 +212,7 @@ function tallyTrophies() {
             tally ++;
         }
     }
+    //uses tally count to unlock "5 trophies" trophy
    if (tally >= 5){ $scope.trophies[9].locked = false; }
 }
     tallyTrophies();
