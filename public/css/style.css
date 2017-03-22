@@ -1,23 +1,21 @@
 a {
     font-family: 'Cabin Sketch', cursive;
 }
+
 .displayedStudentInfo {
-
-  border: 1px solid black;
+    border: 1px solid black;
 }
+
 .displayedStudentInfoName {
+    border: 1px solid black;
+}
 
-  border: 1px solid black;
-}
 .studentColumn {
-  border: 1px solid black;
+    border: 1px solid black;
 }
+
 .studentColumn {
-  border: 1px solid black;
-}
-.wrapper {
-    min-height: 100%;
-    margin-bottom: -90px;
+    border: 1px solid black;
 }
 
 html, body {
@@ -34,8 +32,8 @@ html, body {
     height: 90px;
 }
 
-.push{
-  height: 90px;
+.push {
+    height: 90px;
 }
 
 .headButton {
@@ -43,20 +41,16 @@ html, body {
     background-color: #6496c8;
     text-shadow: -1px 1px #417cb8;
     border: none;
-    margin: 5px;
+    margin: 10px;
     padding: 5px;
 }
 
-
-.description{
+.description {
     margin: 20px;
     text-align: center;
-    margin-right: 70px
+    margin-right: 10px;
+}
 
-}
-.headButton {
-  margin: 10px;
-}
 .headButton.hover {
     background-color: #346392;
     text-shadow: -1px 1px #27496d;
@@ -66,54 +60,30 @@ html, body {
     background-color: #27496d;
     text-shadow: -1px 1px #193047;
 }
+
 .greeting {
-  margin: 10px;
-  margin-top:auto;
-  margin-bottom: auto;
-  padding: 15px;
+    margin: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 15px;
 }
+
 footer p {
     text-align: center;
 }
 
-.box {
-  height: 175px;
-   width: 200px;
-    border-radius: 50%;
-    margin-top: 0px;
-    background-color: #0071bc;
-    box-shadow: 5px 5px 15px #606060;
-
-}
-
-p.text {
-    margin-top: 25px;
-    word-wrap: break-word;
-    margin-left: 25px;
-    margin-right: 25px;
-    color: white;
-}
-
-.trophy {
+.box, .trophy {
     height: 175px;
     width: 200px;
     border-radius: 50%;
     margin-top: 0px;
-    /*background-color: blue;*/
-    /*text-align: center;*/
+    background-color: #0071bc;
     box-shadow: 5px 5px 15px #606060;
-}
-
-.row {
-    margin-top: 20px;
 }
 
 .locked {
     filter: brightness(35%) grayscale(100%);
-    background-color: grey;
 }
-
-
 
 .flip-container {
     perspective: 1000px;
@@ -187,20 +157,16 @@ h1, h4, li {
     vertical-align: middle;
 }
 
-#resMessage {
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
-}
 .progress {
-  top: 50px;
-  margin: auto;
-  margin-top: 25px;
-  width: 50%;
-  position: absolute;
-  z-index: 100;
-  margin-left: 50px;
+    top: 50px;
+    margin: auto;
+    margin-top: 25px;
+    width: 50%;
+    position: absolute;
+    z-index: 100;
+    margin-left: 50px;
 }
+
 .progress-bar {
-  min-width: 20px;
+    min-width: 20px;
 }
