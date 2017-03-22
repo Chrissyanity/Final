@@ -41,22 +41,6 @@ app.factory('dbFactory', function($http) {
         return promise;
     };
 
-    //this function updates the number of books by id
-    function updateBooksRead(updatedStudent) {
-        var newStudent = {
-            studentname: newStudent,
-            booksread: 0
-        };
-        var promise = $http({
-            method: 'POST',
-            url: '/add-student',
-            data: newStudent
-        }).then(function success(response) {
-
-            student = response.data;
-        });
-        return promise;
-    };
 
     //this function updates the number of books by id
     function updateBooksRead(updatedStudent) {
