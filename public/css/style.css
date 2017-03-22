@@ -1,6 +1,6 @@
-a {
+/*a {
     font-family: 'Cabin Sketch', cursive;
-}
+}*/
 
 html, body {
     height: 100%;
@@ -11,7 +11,18 @@ html, body {
     min-height: 100%;
     margin-bottom: -90px;
 }
-
+.navbar-default {
+  background-color: #0071bc!important;
+  border-color: #006bb3!important;
+}
+.navbar-nav>li>a{
+  color: #333!important;
+  transition: all .2s ease-in-out;
+}
+.navbar-nav>li>a:hover{
+  color: #333!important;
+  transform: scale(1.1);
+}
 .footer {
     height: 90px;
 }
