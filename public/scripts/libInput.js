@@ -6,7 +6,10 @@ app.controller('libInput', function($scope, $route, dbFactory, readingFactory, s
 
 
   //taking information from the form and when submit button is clicked it increments the book by one
+
+
   $scope.updateBooks = function(student) {
+
 
       console.log(student);
     readingFactory.exportTo(student);
@@ -49,7 +52,10 @@ app.controller('libInput', function($scope, $route, dbFactory, readingFactory, s
       console.log("Book title field cleared!");
 
 
+
 //myValue determines whether or not madLib output displays. true = yes false=no
+// $route.reload();
+
       $scope.myValue = false;
       $scope.showAlert = function () {
         $scope.myValue = true;
@@ -63,7 +69,6 @@ app.controller('libInput', function($scope, $route, dbFactory, readingFactory, s
       $scope.showAlert();
       $location.path('/formOutput');
     });
-    $route.reload();
-  };
 
+};
 });
