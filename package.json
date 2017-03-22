@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cdavis19/FinalProject.git"
+    "url": "git+https://github.com/theadammason/Final"
   },
   "author": "Adam Mason, Chris Davis, Jared Eisenhauer, Christina Lee",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cdavis19/FinalProject/issues"
+    "url": "https://calm-caverns-78689.herokuapp.com/"
   },
-  "homepage": "https://github.com/cdavis19/FinalProject#readme"
+  "homepage": "https://calm-caverns-78689.herokuapp.com/#/intro"
 }
