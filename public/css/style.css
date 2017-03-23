@@ -320,3 +320,7 @@ width: 15pxpx;
   font-family: 'Short Stack', cursive;
   /*background-color: red;*/
 }
+
+::-webkit-input-placeholder{
+  color: white;
+}
