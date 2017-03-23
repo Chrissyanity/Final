@@ -4,6 +4,27 @@ app.controller('updateCtrl', function ($scope, $route, dbFactory, studentFactory
 
     var updatedStudent = studentFactory.returnStudent();
 
+    updatePages();
+
+    //setting $scope.maxPages depending on selectedStudent values from database
+    function updatePages() {
+      if ($scope.selectedStudent.overfifty === true) {
+        $scope.selectedStudent.maxPages = "Over 50 pages";
+      }
+
+      if ($scope.selectedStudent.overonehundred === true) {
+          $scope.selectedStudent.maxPages = "Over 100 pages";
+      }
+
+      if ($scope.selectedStudent.overtwohundred === true) {
+          $scope.selectedStudent.maxPages = "Over 200 pages";
+      }
+
+      if ($scope.selectedStudent.overfifty === false) {
+          $scope.selectedStudent.maxPages = "None yet. Get Reading!";
+      }
+    }
+
     //taking information from the form and when submit button is clicked it increments the book by one
     $scope.updateBooks = function (student) {
 
@@ -12,22 +33,7 @@ app.controller('updateCtrl', function ($scope, $route, dbFactory, studentFactory
 
         //setting $scope.student to the input recieved from the "Log a new book" form
         $scope.student = studentFactory.importIn();
-        //setting $scope.maxPages depending on selectedStudent values from database
-        if ($scope.selectedStudent.overfifty === true) {
-            $scope.maxPages = "Over 50 pages";
-        }
 
-        if ($scope.selectedStudent.overonehundred === true) {
-            $scope.maxPages = "Over 100 pages";
-        }
-
-        if ($scope.selectedStudent.overtwohundred === true) {
-            $scope.maxPages = "Over 200 pages";
-        }
-
-        if ($scope.selectedStudent.overfifty === false) {
-            $scope.maxPages = "None yet. Get Reading!";
-        }
 
 
 
@@ -73,6 +79,7 @@ app.controller('updateCtrl', function ($scope, $route, dbFactory, studentFactory
         };
 
         dbFactory.updateBooksRead(updatedStudent).then(function () {
+          updatePages();
             $scope.showAlert();
             $location.path('/formOutput');
         });
