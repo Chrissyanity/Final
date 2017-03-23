@@ -22,13 +22,17 @@ html, body {
 .navbar-nav>li>a:hover {
     /*color: #333!important;*/
     transform: scale(1.1);
+<<<<<<< HEAD
 }
 .headerSplash {
   width: 100%;
 }
 .headText {
   margin-top: 10px;
+=======
+>>>>>>> a69437acd61ed64bfdb510bd06ea3799369ac7d3
 }
+
 .footer {
     height: 90px;
     background-color: #F53240;
