@@ -327,6 +327,18 @@ th {
     margin-left: 72px;
 }
 
+#getUser {
+  border-radius: 20%;
+    background-color: #0072BD;
+    color: white;
+}
+
+#addUser {
+  border-radius: 20%;
+    background-color: #0072BD;
+    color: white;
+}
+
 .bookdiv {
     margin-left: 160px;
 }
