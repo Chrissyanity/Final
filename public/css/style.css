@@ -53,7 +53,6 @@ html, body {
     padding: 5px;
     background-color: #F53240;
     border-radius: 20%;
-
 }
 
 .headButton:hover {
@@ -222,105 +221,95 @@ li {
 }
 
 .table {
-  border: 1px solid black;
-  background-color: #F9BE02;
-  color: #F53240;
+    border: 1px solid black;
+    background-color: #ffffff;
 }
-/*.classroomColumn {
-  border: 1px solid black;
-  background-color: #F53240;
-  color: white;
-}*/
 
 th {
-  color: white;
-  padding-bottom: 2px;
+    padding-bottom: 2px;
 }
 
 .drop1 select {
-/* background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0; */
-height: 29px;
-overflow: hidden;
-width: 240px;
--webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   background-color: #7CDBD5;
-   color: #fff;
-  text-align: center;
+    /* background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0; */
+    height: 29px;
+    overflow: hidden;
+    width: 240px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #7CDBD5;
+    color: #fff;
+    text-align: center;
 }
 
 #bookTitleField {
-  height: 29px;
-overflow: hidden;
-width: 240px;
--webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   background-color: #F9BE02;
-   color: white;
-  text-align: center;
+    height: 29px;
+    overflow: hidden;
+    width: 240px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #F9BE02;
+    color: white;
+    text-align: center;
 }
 
 .drop2 select {
-height: 29px;
-overflow: hidden;
-width: 240px;
--webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   background-color: #7CDBD5;
-   color: #fff;
+    height: 29px;
+    overflow: hidden;
+    width: 240px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #7CDBD5;
+    color: #fff;
 }
 
 .drop3 select {
-height: 29px;
-overflow: hidden;
-width: 240px;
--webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   background-color: #7CDBD5;
-   color: #fff;
-
+    height: 29px;
+    overflow: hidden;
+    width: 240px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #7CDBD5;
+    color: #fff;
 }
 
 .drop4 select {
-height: 29px;
-overflow: hidden;
-width: 240px;
--webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   background-color: #7CDBD5  ;
-   color: #fff;
-
+    height: 29px;
+    overflow: hidden;
+    width: 240px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #7CDBD5;
+    color: #fff;
 }
 
-#buttonDiv button{
-
-  height: 29px;
-overflow: hidden;
-width: 15pxpx;
--webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   border-radius: 20px;
-   background-color: #F9BE20;
-   color: white;
- margin-left: 72px;
+#buttonDiv button {
+    height: 29px;
+    overflow: hidden;
+    width: 15pxpx;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #F9BE20;
+    color: white;
+    margin-left: 72px;
 }
 
 .bookdiv {
-  margin-left: 160px;
+    margin-left: 160px;
 }
 
 .madLib p {
-  font-size: 20px;
-  color: white;
-  font-family: 'Short Stack', cursive;
-  /*background-color: red;*/
+    font-size: 20px;
+    color: white;
+    font-family: 'Short Stack', cursive;
+    /*background-color: red;*/
 }
 
-::-webkit-input-placeholder{
-  color: white;
+::-webkit-input-placeholder {
+    color: white;
 }
