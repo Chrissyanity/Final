@@ -27,7 +27,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
             source: '../img/book.png',
             backsource: '../img/allTheTrophies/50pagesback.png',
             alternate: 'read more than 50 pages',
-            trophyName: 'Read 50 pages, and you will unlock this sweet reward! (Need at least 3 books read)',
+            trophyName: 'Read 50 pages, and you will unlock this sweet reward! (Need at least 3 total books read)',
             locked: true,
             progress: false,
             barValue: 0
@@ -90,8 +90,8 @@ app.controller('trophyController', function ($scope, studentFactory) {
         }, {
             source: '../img/allTheTrophies/5trophiesfront.png',
             backsource: '../img/allTheTrophies/5trophies.png',
-            alternate: 'more than 5 trophies!',
-            trophyName: 'more than 5 trophies (trophy)!',
+            alternate: 'More than 5 trophies!',
+            trophyName: 'You have more than 5 trophies unlocked! Awesome!',
             locked: true,
             progress: false,
             barValue: 0
@@ -144,7 +144,7 @@ app.controller('trophyController', function ($scope, studentFactory) {
             source: '../img/trophyImages/100Trophy.png',
             backsource: '../img/trophy_backs/100.png',
             alternate: 'read 100 books!',
-            trophyName: 'READING CHAMPION! You read 100 whole books!',
+            trophyName: 'READING CHAMPION! You read 100 books!',
             locked: true,
             progress: true,
             barValue: Math.floor(($scope.individual.booksread / 100) * 100)

@@ -30,7 +30,7 @@ app.config(function($routeProvider, $locationProvider) {
     })
 
     .when('/formOutput', {
-      controller: 'libOutput',
+      controller: 'updateCtrl',
       templateUrl: '../views/formOutput.html'
     })
 //redirects to intro
