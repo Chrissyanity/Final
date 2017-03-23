@@ -1,32 +1,45 @@
 var app = angular.module('myMod');
 
-app.controller('updateCtrl', function ($scope, $route, dbFactory, studentFactory, $location) {
+app.controller('updateCtrl', function($scope, $route, dbFactory, studentFactory, $location) {
 
     var updatedStudent = studentFactory.returnStudent();
 
     updatePages();
 
+    //myValue determines whether or not madLib output displays. true = yes false=no
+    $scope.myValue = false;
+    $scope.showAlert = function() {
+        console.log("show story");
+        $scope.myValue = true;
+    };
+
+    $scope.hideAlert = function() {
+        console.log("hide story");
+
+        $scope.myValue = false;
+    };
+
     //setting $scope.maxPages depending on selectedStudent values from database
     function updatePages() {
-      if ($scope.selectedStudent.overfifty === true) {
-        $scope.selectedStudent.maxPages = "Over 50 pages";
-      }
+        if ($scope.selectedStudent.overfifty === true) {
+            $scope.selectedStudent.maxPages = "Over 50 pages";
+        }
 
-      if ($scope.selectedStudent.overonehundred === true) {
-          $scope.selectedStudent.maxPages = "Over 100 pages";
-      }
+        if ($scope.selectedStudent.overonehundred === true) {
+            $scope.selectedStudent.maxPages = "Over 100 pages";
+        }
 
-      if ($scope.selectedStudent.overtwohundred === true) {
-          $scope.selectedStudent.maxPages = "Over 200 pages";
-      }
+        if ($scope.selectedStudent.overtwohundred === true) {
+            $scope.selectedStudent.maxPages = "Over 200 pages";
+        }
 
-      if ($scope.selectedStudent.overfifty === false) {
-          $scope.selectedStudent.maxPages = "None yet. Get Reading!";
-      }
+        if ($scope.selectedStudent.overfifty === false) {
+            $scope.selectedStudent.maxPages = "None yet. Get Reading!";
+        }
     }
 
     //taking information from the form and when submit button is clicked it increments the book by one
-    $scope.updateBooks = function (student) {
+    $scope.updateBooks = function(student) {
 
         studentFactory.exportTo(student);
         updatedStudent.booksread++;
@@ -67,19 +80,8 @@ app.controller('updateCtrl', function ($scope, $route, dbFactory, studentFactory
         var clearField = document.getElementById("bookTitleField");
         clearField.value = '';
 
-
-        //myValue determines whether or not madLib output displays. true = yes false=no
-        $scope.myValue = false;
-        $scope.showAlert = function () {
-            $scope.myValue = true;
-        };
-
-        $scope.hideAlert = function () {
-            $scope.myValue = false;
-        };
-
-        dbFactory.updateBooksRead(updatedStudent).then(function () {
-          updatePages();
+        dbFactory.updateBooksRead(updatedStudent).then(function() {
+            updatePages();
             $scope.showAlert();
             $location.path('/formOutput');
         });
