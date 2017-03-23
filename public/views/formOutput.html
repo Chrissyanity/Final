@@ -36,7 +36,7 @@
                             Classroom
                         </th>
                         <th>
-                          
+
                         </th>
                     </tr>
                     <tr>
@@ -92,9 +92,13 @@
 
                     <div class="modal-body">
                         <div class="bookdiv">
-                            <input type="text" placeholder="Enter Title of Book" ng-model="student.book" id="bookTitleField">
-                        </div>
-                        <div class="yellow">
+                            <div>
+
+                                <input type="text" placeholder="Enter Title of Book" ng-model="student.book" id="bookTitleField">
+                            </div>
+                        <br>
+
+                        <div class="drop1">
                             <select required ng-model="student.character">
                                 <option value="" disabled selected>How would you describe yourself today?</option>
                                 <option>A Rockstar</option>
@@ -102,9 +106,9 @@
                                 <option>An Adventurer</option>
                                 <option>A Champion</option>
                             </select>
-                        </div>
+                        </div><br>
 
-                        <div class="green">
+                        <div class="drop2">
                             <select required ng-model="student.place">
                                 <option value="" disabled selected>Pick a place</option>
                                 <option>The Park</option>
@@ -114,9 +118,9 @@
                                 <option>In Outerspace</option>
                                 <option>Other</option>
                             </select>
-                        </div>
+                        </div><br>
 
-                        <div class="yellow">
+                        <div class="drop3">
                             <select required ng-model="student.pagesread">
                                 <option value="" disabled selected>How many pages have you read?</option>
                                 <option>less than 50 pages</option>
@@ -124,17 +128,17 @@
                                 <option>Somewhere between 100 - 200 pages</option>
                                 <option>200 or more pages</option>
                             </select>
-                        </div>
+                        </div><br>
 
 
-                        <div class="yellow">
+                        <div class="drop4">
                             <select required ng-model="student.time">
                                 <option value="" disabled selected>How long did you read?</option>
                                 <option>30 minutes</option>
                                 <option>One Hour</option>
                                 <option>More than an hour</option>
                             </select>
-                        </div>
+                        </div><br>
                         <div id="buttonDiv">
                             <button type="submit" ng-click="updateBooks(student)" data-dismiss="modal">Let's Submit!</button>
                         </div>
@@ -144,6 +148,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </div>
