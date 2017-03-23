@@ -1,7 +1,3 @@
-/*a {
-    font-family: 'Cabin Sketch', cursive;
-}*/
-
 html, body {
     height: 100%;
     margin: 0;
@@ -25,9 +21,11 @@ html, body {
 
 .navbar-nav>li>a:hover {
     /*color: #333!important;*/
-    transform: scale(1.1);
 }
-
+.headerImageContainer {
+  background-image: url("../img/kidsBooks.jpeg");
+  background-size:cover;
+}
 .footer {
     height: 60px;
     background-color: #F53240;
