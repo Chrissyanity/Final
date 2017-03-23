@@ -38,12 +38,20 @@ html, body {
     height: 90px;
 }
 
+th,td,span {
+  font-family: 'Karla', sans-serif;
+  color: #0072BD;
+  font-size: 17px;
+}
+
 .description {
     margin: 20px;
     text-align: center;
     margin-right: 10px;
     color: white;
     text-shadow: 2px 2px 25px #000000;
+    font-family: 'Karla', sans-serif;
+    font-size: 17px;
 }
 
 .headButton {
@@ -54,6 +62,7 @@ html, body {
     padding: 5px;
     background-color: #F53240;
     border-radius: 20%;
+    font-family: 'Karla', sans-serif;
 }
 
 .headButton:hover {
@@ -73,6 +82,7 @@ html, body {
     padding: 5px;
     background-color: #F53240;
     border-radius: 20%;
+    font-family: 'Karla', sans-serif;
 }
 
 .formButton:hover {
@@ -92,6 +102,8 @@ html, body {
 footer p {
     text-align: center;
     color: white;
+    font-size: 17px;
+    font-family: 'Karla', sans-serif;
 }
 
 .frontPageImg {
@@ -309,6 +321,8 @@ th {
     color: white;
     font-family: 'Short Stack', cursive;
     /*background-color: red;*/
+    text-align: center;
+    text-shadow: 2px 2px 25px #000000;
 }
 
 ::-webkit-input-placeholder {
