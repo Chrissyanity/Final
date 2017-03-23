@@ -2,6 +2,7 @@
     font-family: 'Cabin Sketch', cursive;
 }*/
 
+
 html, body {
     height: 100%;
     margin: 0;
@@ -10,21 +11,24 @@ html, body {
 .wrapper {
     min-height: 100%;
     margin-bottom: -90px;
+    background-color: #02C8A7;
 }
 .navbar-default {
-  background-color: #0071bc!important;
+  background-color: #f9BE02!important;
   border-color: #006bb3!important;
 }
 .navbar-nav>li>a{
-  color: #333!important;
-  transition: all .2s ease-in-out;
+  color: white!important;
+  /*transition: all .2s ease-in-out;*/
 }
 .navbar-nav>li>a:hover{
-  color: #333!important;
+  /*color: #333!important;*/
   transform: scale(1.1);
 }
 .footer {
     height: 90px;
+    background-color: #F53240;
+
 }
 
 .push {
@@ -35,25 +39,31 @@ html, body {
     margin: 20px;
     text-align: center;
     margin-right: 10px;
+    color: white;
+    text-shadow: 2px 2px 25px #000000;
 }
 
 .headButton {
-    color: #fff;
-    background-color: #6496c8;
-    text-shadow: -1px 1px #417cb8;
+  color: #fff;
+    background-color: #F9BE02;
+    text-shadow: -2px 2px #346392;
     border: none;
     margin: 10px;
     padding: 5px;
+    background-color: #F53240;
+    border-radius: 20%;
 }
 
-.headButton.hover {
-    background-color: #346392;
+.headButton:hover {
+  /*background-color: #346392;*/
     text-shadow: -1px 1px #27496d;
 }
 
-.headButton.active {
-    background-color: #27496d;
-    text-shadow: -1px 1px #193047;
+.headButton:active {
+
+  /*background-color: #27496d;*/
+     text-shadow: -1px 1px #193047;
+
 }
 .formButton {
     color: #fff;
@@ -83,6 +93,13 @@ html, body {
 
 footer p {
     text-align: center;
+    color: white;
+}
+
+.frontPageImg {
+  border: black;
+  box-shadow: 5px 5px 15px #606060;
+  border-radius: 50%;
 }
 
 .box, .trophy {
@@ -147,8 +164,26 @@ footer p {
     transform: rotateY(180deg);
 }
 
-h1, h4, li {
+h1,h4,li {
     text-align: center;
+    color: white;
+    text-shadow: 2px 2px 25px #000000;
+}
+
+#intro {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 25px #000000;
+}
+
+h4 {
+    text-align: center;
+    color: white;
+}
+
+li {
+    text-align: center;
+    color: white;
 }
 
 .modal {
