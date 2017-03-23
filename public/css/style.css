@@ -356,3 +356,9 @@ th {
 ::-webkit-input-placeholder {
     color: white;
 }
+
+.expressions {
+  color: #F53240;
+  font-size: 20px;
+  text-shadow: none;
+}
