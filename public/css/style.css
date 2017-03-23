@@ -53,6 +53,9 @@ th,td,span {
   color: #0072BD;
   font-size: 17px;
 }
+th {
+  text-align: center!important;
+}
 
 .description {
     margin: 20px;
