@@ -2,7 +2,6 @@
     font-family: 'Cabin Sketch', cursive;
 }*/
 
-
 html, body {
     height: 100%;
     margin: 0;
@@ -13,22 +12,25 @@ html, body {
     margin-bottom: -90px;
     background-color: #02C8A7;
 }
+
 .navbar-default {
-  background-color: #f9BE02!important;
-  border-color: #006bb3!important;
+    background-color: #f9BE02!important;
+    border-color: #006bb3!important;
 }
-.navbar-nav>li>a{
-  color: white!important;
-  /*transition: all .2s ease-in-out;*/
+
+.navbar-nav>li>a {
+    color: white!important;
+    /*transition: all .2s ease-in-out;*/
 }
-.navbar-nav>li>a:hover{
-  /*color: #333!important;*/
-  transform: scale(1.1);
+
+.navbar-nav>li>a:hover {
+    /*color: #333!important;*/
+    transform: scale(1.1);
 }
+
 .footer {
     height: 90px;
     background-color: #F53240;
-
 }
 
 .push {
@@ -44,9 +46,28 @@ html, body {
 }
 
 .headButton {
-  color: #fff;
-    background-color: #F9BE02;
-    text-shadow: -2px 2px #346392;
+    color: #fff;
+    /*background-color: #F9BE02;*/
+    border: none;
+    margin: 10px;
+    padding: 5px;
+    background-color: #F53240;
+    border-radius: 20%;
+
+}
+
+.headButton:hover {
+    background-color: #F53240;
+    opacity: 0.7;
+}
+
+.headButton:active {
+    /*background-color: #27496d;*/
+}
+
+.formButton {
+    color: #fff;
+    /*background-color: #F9BE02;*/
     border: none;
     margin: 10px;
     padding: 5px;
@@ -54,35 +75,12 @@ html, body {
     border-radius: 20%;
 }
 
-.headButton:hover {
-  /*background-color: #346392;*/
-    text-shadow: -1px 1px #27496d;
+.formButton:hover {
+    background-color: #F53240;
+    opacity: 0.7;
 }
 
-.headButton:active {
-
-  /*background-color: #27496d;*/
-     text-shadow: -1px 1px #193047;
-
-}
-.formButton {
-    color: #fff;
-    background-color: #6496c8;
-    text-shadow: -1px 1px #417cb8;
-    border: none;
-    margin: 10px;
-    padding: 5px;
-}
-
-.formButton.hover {
-    background-color: #346392;
-    text-shadow: -1px 1px #27496d;
-}
-
-.formButton.active {
-    background-color: #27496d;
-    text-shadow: -1px 1px #193047;
-}
+.formButton:active {}
 
 .greeting {
     margin: 10px;
@@ -97,9 +95,9 @@ footer p {
 }
 
 .frontPageImg {
-  border: black;
-  box-shadow: 5px 5px 15px #606060;
-  border-radius: 50%;
+    border: black;
+    box-shadow: 5px 5px 15px #606060;
+    border-radius: 50%;
 }
 
 .box, .trophy {
@@ -164,7 +162,7 @@ footer p {
     transform: rotateY(180deg);
 }
 
-h1,h4,li {
+h1, h4, li {
     text-align: center;
     color: white;
     text-shadow: 2px 2px 25px #000000;
@@ -218,6 +216,107 @@ li {
 .progress-bar {
     min-width: 20px;
 }
+
 .table {
-  box-shadow: 2px 3px 4px gray;
+    box-shadow: 2px 3px 4px gray;
+}
+
+.table {
+  border: 1px solid black;
+  background-color: #F9BE02;
+  color: #F53240;
+}
+/*.classroomColumn {
+  border: 1px solid black;
+  background-color: #F53240;
+  color: white;
+}*/
+
+th {
+  color: white;
+  padding-bottom: 2px;
+}
+
+.drop1 select {
+/* background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0; */
+height: 29px;
+overflow: hidden;
+width: 240px;
+-webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   background-color: #7CDBD5;
+   color: #fff;
+  text-align: center;
+}
+
+#bookTitleField {
+  height: 29px;
+overflow: hidden;
+width: 240px;
+-webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   background-color: #F9BE02;
+   color: white;
+  text-align: center;
+}
+
+.drop2 select {
+height: 29px;
+overflow: hidden;
+width: 240px;
+-webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   background-color: #7CDBD5;
+   color: #fff;
+}
+
+.drop3 select {
+height: 29px;
+overflow: hidden;
+width: 240px;
+-webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   background-color: #7CDBD5;
+   color: #fff;
+
+}
+
+.drop4 select {
+height: 29px;
+overflow: hidden;
+width: 240px;
+-webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   background-color: #7CDBD5  ;
+   color: #fff;
+
+}
+
+#buttonDiv button{
+
+  height: 29px;
+overflow: hidden;
+width: 15pxpx;
+-webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   background-color: #F9BE20;
+   color: white;
+ margin-left: 72px;
+}
+
+.bookdiv {
+  margin-left: 160px;
+}
+
+.madLib p {
+  font-size: 20px;
+  color: white;
+  font-family: 'Short Stack', cursive;
+  /*background-color: red;*/
 }
