@@ -189,7 +189,7 @@ footer p {
 h1, h4, li {
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 25px #000000;
+    /*text-shadow: 2px 2px 25px #000000;*/
 }
 
 #intro {
