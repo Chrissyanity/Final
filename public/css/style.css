@@ -1,7 +1,3 @@
-/*a {
-    font-family: 'Cabin Sketch', cursive;
-}*/
-
 html, body {
     height: 100%;
     margin: 0;
@@ -27,7 +23,12 @@ html, body {
     /*color: #333!important;*/
     transform: scale(1.1);
 }
-
+.headerSplash {
+  width: 100%;
+}
+.headText {
+  margin-top: 10px;
+}
 .footer {
     height: 90px;
     background-color: #F53240;
