@@ -29,8 +29,9 @@ html, body {
 }
 
 .footer {
-    height: 90px;
+    height: 60px;
     background-color: #F53240;
+    margin-top: 30px;
 }
 
 .push {
